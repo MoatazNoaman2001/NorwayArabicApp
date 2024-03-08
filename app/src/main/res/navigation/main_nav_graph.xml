@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/generalNewsFragment">
+
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.onBoard.OnBoardFragment"
+        android:label="@string/arabic_norway_fm"
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalNewsFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.general.GeneralNewsFragment"
+        android:label="@string/arabic_norway_fm"
+        tools:layout="@layout/fragment_general_news" >
+        <action
+            android:id="@+id/action_generalNewsFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/politicalNewsFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.news.politicalNews.PoliticalNewsFragment"
+        android:label="@string/political_news"
+        tools:layout="@layout/fragment_political_news" >
+        <action
+            android:id="@+id/action_politicalNewsFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportNews"
+        android:name="com.example.norwayapplicationxml.peresentation.news.sportNews.SportNewsFragment"
+        android:label="@string/sport_news"
+        tools:layout="@layout/fragment_sport_news_list" >
+        <action
+            android:id="@+id/action_sportNews_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/localNewsFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.news.localNews.LocalNewsFragment"
+        android:label="@string/local_news"
+        tools:layout="@layout/fragment_local_news" >
+        <action
+            android:id="@+id/action_localNewsFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.settings.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_languageSelectFragment"
+            app:destination="@id/languageSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailsFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.postDetails.PostDetailsFragment"
+        android:label="details"
+        tools:layout="@layout/fragment_post_deatils" />
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.youtube.YoutubeFragment"
+        android:label="@string/youtube"
+        tools:layout="@layout/fragment_youtube" />
+    <fragment
+        android:id="@+id/snapChatFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.soundCloud.SnapChatFragment"
+        android:label="@string/snapchat"
+        tools:layout="@layout/fragment_snap_chat" />
+    <fragment
+        android:id="@+id/platFormsFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.platforms.PlatFormsFragment"
+        android:label="platfroms"
+        tools:layout="@layout/fragment_plat_froms" />
+    <dialog
+        android:id="@+id/languageSelectFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.settings.LanguageSelectFragment"
+        android:label="fragment_language_select_list_dialog"
+        tools:layout="@layout/fragment_language_select_list_dialog" />
+</navigation>

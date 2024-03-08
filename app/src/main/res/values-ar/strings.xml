@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اذاعة النرويج بالعربية</string>
+    <string name="hello_world">اهلا بكم!</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="arabic_norway_fm">اذاعة النرويج العربية</string>
+    <string name="news">الاخبار</string>
+    <string name="political_news">الاخبار السياسية</string>
+    <string name="local_news">الاخبار المحلية</string>
+    <string name="sport_news">الاخبار الرياضية</string>
+    <string name="general">منوعات</string>
+    <string name="on_board">التحقيقات</string>
+    <string name="sport">الرياضية</string>
+    <string name="political">السياسية</string>
+    <string name="local">المحلية</string>
+    <string name="setting">الاعدادات</string>
+    <string name="published_on">نشر علي</string>
+    <string name="error_caught">حدث خطا</string>
+    <string name="error_has_been_caught">تفاصيل الخطا</string>
+    <string name="retry">اعادة</string>
+    <string name="published_in_s_s_s_views_by_s">نشر في %s %s | %s مشاهدات | By %s</string>
+    <string name="you_have_no_internet_connection">ليس لديك اتصال بالإنترنت</string>
+    <string name="services">خدمات</string>
+    <string name="platforms">منصاتنا</string>
+    <string name="snapchat">سناب شات</string>
+    <string name="youtube">يوتيوب</string>
+    <string name="language">لغة</string>
+    <string name="dark_theme">الوضع الليلي</string>
+    <string name="play_in_background">تشغيل بالخلفية</string>
+    <string name="norsk">Norsk</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+</resources>

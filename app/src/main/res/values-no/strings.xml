@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radio Norge på arabisk</string>
+    <string name="hello_world">Hei Verden!</string>
+    <string name="change_language">skifte språk</string>
+    <string name="arabic_norway_fm">Arabic Norway Fm</string>
+    <string name="news">nyheter</string>
+    <string name="general">generell</string>
+    <string name="on_board">om bord</string>
+    <string name="political_news">Politiske nyheter</string>
+    <string name="local_news">Lokale nyheter</string>
+    <string name="sport_news">Sport Nyheter</string>
+    <string name="sport">Sport</string>
+    <string name="political">Politiske</string>
+    <string name="local">Lokale</string>
+    <string name="setting">innstilling</string>
+    <string name="published_on">publisert på</string>
+    <string name="error_caught">Error Caught</string>
+    <string name="error_has_been_caught">Feilmeldingsdetaljer: </string>
+    <string name="retry">prøv på nytt</string>
+    <string name="published_in_s_s_s_views_by_s">published in %s %s | %s views | By %s</string>
+    <string name="you_have_no_internet_connection">du har ingen internettforbindelse</string>
+    <string name="services">tjenester</string>
+    <string name="platforms">Plattformer</string>
+    <string name="snapchat">SnapChat</string>
+    <string name="youtube">Youtube</string>
+    <string name="language">Språk</string>
+    <string name="dark_theme">Mørkt tema</string>
+    <string name="play_in_background">Spill i bakgrunnen</string>
+    <string name="norsk">Norsk</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+</resources>

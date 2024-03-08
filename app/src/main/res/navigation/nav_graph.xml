@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startSplashFragment">
+    <fragment
+        android:id="@+id/selectLanguageFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.startApp.selectLanguage.SelectLanguageFragment"
+        android:label="fragment_select_language"
+        tools:layout="@layout/fragment_select_language" />
+    <fragment
+        android:id="@+id/startSplashFragment"
+        android:name="com.example.norwayapplicationxml.peresentation.splashVideo.StartSplashFragment"
+        android:label="fragment_start_splash"
+        tools:layout="@layout/fragment_start_splash" >
+        <action
+            android:id="@+id/action_startSplashFragment_to_selectLanguageFragment"
+            app:destination="@id/selectLanguageFragment" />
+    </fragment>
+</navigation>

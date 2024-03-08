@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".peresentation.postDetails.PostDetailsFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/detailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="cardBig"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/postMainImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/nerway_full_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/rubik_medium"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+                android:transitionName="titleBig"
+                tools:text="kadsfh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/postMetaDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    tools:text=" نشرة في ديسمبر 31, 2023 by Norway Voice | 2934 Views | 1 min read " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/likes"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="14dp"
+                    android:background="@drawable/cirle_text_view"
+                    android:drawableStart="@drawable/round_thumb_up_24"
+                    android:drawablePadding="4dp"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    tools:text="26" />
+            </LinearLayout>
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_marginTop="8dp"
+                    android:lines="18"
+                    android:maxLines="8"
+                    android:visibility="visible" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <TextView
+                android:id="@+id/articleContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                tools:text="صوت النرويج / الاحد 31 كانون الاول – ديسمبر 2023 / أوسلو / في اخر تحديث لتعليمات مديرية شرطة الجمارك والذي لم يتغير كثيرًا بخصوص الاموال النقدية والتي يسمح للمواطنين بجملها معهم اثناء السفر حيث استمر ذات القرار ان المبلغ الاعلى المعفي من التسجيل هو 25 الف كرون نرويجي نقدًا او ما يعادله بالعملات الرسمية الاخرى." />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/footerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:id="@+id/publisher"
+                        tools:text="وسام كريم العزاوي " />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textStyle="bold"
+                        tools:text="المحرر المسؤول:" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/publisherImage"
+                    android:layout_marginHorizontal="8dp"
+                    tools:src="@drawable/sime_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                    android:textStyle="bold"
+                    android:id="@+id/footerMeta"
+                    android:layout_marginTop="8dp"
+                    tools:text="الاعداد والنشر: أمل عيد
+
+اليوتيوب والتواصل الاجتماعي : علي العزاوي
+
+الصور: صوت النرويج
+
+المصدر : هيئة الاذاعة النرويجية
+
+التصاميم : صوت النرويج" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:id="@+id/youtubeChannel"
+                        tools:text="القناة على اليوتيوب" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textStyle="bold"
+                        tools:text="اليوتيوب: " />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".peresentation.settings.SettingFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="14dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:layout_width="match_parent"
+                android:id="@+id/DarkThemeCheckbox"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_theme"
+                android:layout_marginHorizontal="8dp"/>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PlayCheckBox"
+                android:text="@string/play_in_background"
+                android:layout_marginHorizontal="8dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/LangInputText"
+                android:hint="@string/language"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/baseline_arrow_drop_down_24"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/autoCompleteMenu"
+                    android:enabled="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

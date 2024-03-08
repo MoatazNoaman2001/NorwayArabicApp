@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/news">
+        <menu>
+            <item android:id="@+id/politicalNewsFragment" android:title="@string/political" android:icon="@drawable/baseline_handshake_24"/>
+            <item android:id="@+id/sportNews" android:title="@string/sport" android:icon="@drawable/baseline_sports_football_24"/>
+            <item android:id="@+id/localNewsFragment" android:title="@string/local" android:icon="@drawable/baseline_newspaper_24"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/services">
+        <menu>
+            <item android:id="@+id/youtubeFragment" android:title="@string/youtube" android:icon="@drawable/youtube_outline"/>
+            <item android:id="@+id/snapChatFragment" android:title="@string/snapchat" android:icon="@drawable/snapchat"/>
+            <item android:id="@+id/platFormsFragment" android:title="@string/platforms" android:icon="@drawable/responsive"/>
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/sd" android:title="" android:enabled="false"/>
+    <item android:id="@+id/id" android:title="" android:enabled="false"/>
+    <item android:id="@+id/pd" android:title="" android:enabled="false"/>
+    <item android:id="@+id/fd" android:title="" android:enabled="false"/>
+    <item android:id="@+id/ud" android:title="" android:enabled="false"/>
+    <item android:id="@+id/td" android:title="" android:enabled="false"/>
+    <item android:id="@+id/xd" android:title="" android:enabled="false"/>
+
+    <item android:id="@+id/settingFragment" android:title="@string/setting" android:icon="@drawable/baseline_settings_24"/>
+
+</menu>
